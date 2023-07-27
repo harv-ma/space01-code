@@ -1,0 +1,33 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    @apply text-primary;
+}
+
+* {
+    font-family: 'Roboto', Arial;
+}
+
+th {
+    @apply text-left bg-gray-200 text-black py-1 px-3;
+}
+
+td {
+    @apply text-left text-sm py-2 px-3;
+}
+
+th.sortable {
+    @apply cursor-pointer select-none;
+}
