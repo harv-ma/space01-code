@@ -126,6 +126,8 @@ const Test = () => {
                 <ProductList
                     products={filteredProducts}
                     handleSort={handleSort}
+                    sort={filters.sort}
+                    sortAsc={filters.sortAsc}
                 />
             </div>
         </div>

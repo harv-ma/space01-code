@@ -31,3 +31,7 @@ td {
 th.sortable {
     @apply cursor-pointer select-none;
 }
+
+th > div {
+    @apply flex justify-between items-center;
+}
